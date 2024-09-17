@@ -3,9 +3,10 @@
 // Purpose: Prompts the user to input a letter and repeats it back to them, as well as ask the user 
 // for a number and converts it to a floating double format. 
 
-
+// header file for inputs and outputs
 #include <stdio.h>
 
+// header file 
 #include "getdouble.h"
 
 int main()
@@ -13,6 +14,7 @@ int main()
     // Declaring our variables first
     char character = 'a';
     double number = 0.0;
+
 
     // a prompt that asks for the first letter
     printf("Please enter the first letter: ");
@@ -22,6 +24,7 @@ int main()
     getchar();
     // result of the first letter
     printf("Your first letter is: '%c'\n", character);
+
 
     // a prompt that asks  for the second letter
     printf("Please  enter the second letter: ");
@@ -39,6 +42,7 @@ int main()
     // result of the first number input
     printf("The number is: %f\n", number);
 
+
     // prompt that asks for the first number 
     printf("Please enter the second number: ");
     // stores the input in the 'number' variable and converts it as a decimal
@@ -46,6 +50,7 @@ int main()
     // result of the second number input
     printf("The number is: %f\n", number);
 
-    // returns here if ran correctly 
+
+    // returns if ran correctly 
     return 0;
 }
