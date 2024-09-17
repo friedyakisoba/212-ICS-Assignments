@@ -1,4 +1,4 @@
-program: inputdouble.o getdouble.o
+program: a05.o getdouble.o
 	gcc a05.o getdouble.o -o program -lm
 
 inputdouble.o: a05.c getdouble.h
