@@ -6,7 +6,7 @@
 // header file for inputs and outputs
 #include <stdio.h>
 
-// header file 
+// header file so getdouble() shows correctlys
 #include "getdouble.h"
 
 int main()
