@@ -1,9 +1,12 @@
-//
-//
-//
+// Author Name: Hans Cacalda
+// Date Created: September 16, 2024
+// Purpose: Calculates the amount of days since birth based on the user's input. 
 
+
+// header file that handles user input, output and print function
 #include <stdio.h>
 
+// header file so that getdouble() functions correctly
 #include "getdouble.h"
 
 // Conversion function
