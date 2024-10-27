@@ -1,6 +1,7 @@
 // Hans Cacalda
 // October 25 2024
 // Purpose: Pointer operations by storing, printing, and updating variable addresses.
+
 #include <stdio.h>
 
 // pointer function to change the value
@@ -35,9 +36,17 @@ int main() {
     
     // displas the 5th element in four different ways
     printf("\nAccessing the 5th element:\n");
+
+    // array subscript notation
     printf("Using array[4]: %d\n", array[4]);
+
+    //  pointer/offset with array name
     printf("Using *(array + 4): %d\n", *(array + 4));
+
+    // array subscript notation with pointer
     printf("Using ptr[4]: %d\n", ptr[4]);
+
+    // pointer/offset with pointer
     printf("Using *(ptr + 4): %d\n", *(ptr + 4));
     
     // display the entire array in four different ways
