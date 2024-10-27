@@ -43,17 +43,19 @@ int main() {
     for (int i = 0; i < 5; i++) {
         printf("%d ", array[i]);
     }
-    
+    // pointer/offset notation with array name
     printf("\nUsing *(array + i): ");
     for (int i = 0; i < 5; i++) {
         printf("%d ", *(array + i));
     }
     
+    // array subscript notation with pointer
     printf("\nUsing ptr[i]: ");
     for (int i = 0; i < 5; i++) {
         printf("%d ", ptr[i]);
     }
     
+    // pointer/offset notation with pointer
     printf("\nUsing *(ptr + i): ");
     for (int i = 0; i < 5; i++) {
         printf("%d ", *(ptr + i));
