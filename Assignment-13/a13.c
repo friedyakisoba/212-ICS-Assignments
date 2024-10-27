@@ -1,3 +1,6 @@
+// Hans Cacalda
+// October 25 2024
+// Purpose: Pointer operations by storing, printing, and updating variable addresses.
 #include <stdio.h>
 
 // pointer function to change the value
