@@ -70,11 +70,13 @@ int main(int argc, char *argv[]) {
 
     // Given array function from the instructions
     int (*operations[5])(int, int) = { add, NULL, sub, mul, divide };
-    
+
 
     //Call the function by using the array to select the right operator and then print the result
     int result = operations[index](number1, number2);
     printf("%d %c %d = %d\n", number1, argv[2][0], number2, result);
 
+
+    // code ran successfully 
     return 0;
 }
