@@ -1,8 +1,13 @@
-
+// Hans Cacalda
+// October 28 2024
+/* Purpose: CLI calculator for a POSITIVE SINGLE digit. 
+   The program requires a maximum of four arguments, the arguments being the program itself, the two single digit integers
+   and the operator.
+   The program checks the arguments by using ASCII values and uses function pointers to map the operator to a function
+*/
 
 
 #include <stdio.h>
-#include <stdlib.h>
 
 // Prototypes for basic operations
 int add(int x, int y) { return x + y; }
