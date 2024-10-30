@@ -66,9 +66,7 @@ int main(int argc, char *argv[]) {
     int number1 = argv[1][0] - '0';
     int number2 = argv[3][0] - '0';
 
-    /*  convert operator to an index by using the ASCII values for '+', '-', '.', and '/' 
-        This allows mapping the an index to the function array
-        */ 
+    // convert operator to an index by using the ASCII values to map to an index similar to the one above
     int index = argv[2][0] - '+';  
 
 
