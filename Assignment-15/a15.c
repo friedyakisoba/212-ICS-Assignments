@@ -54,12 +54,14 @@ const char *morse[SIZE] = {
 int main(int argc, char *argv[]) {
 
     /* 
-      2nd argument check, Checks for at least 2 user input within the CLI
+      2nd argument check, checks for at least 2 user input within the CLI
       (the first being the program itself)
     */
     if (argc < 2) {
         printf("ERROR: You only typed the executable. Enter the Morse Code on the commandline.\n");
-        return 1;  // Exit the program if there aren’t enough arguments
+
+        // exits here right after 
+        return 1; 
     }
 
     // for loop function that goes through each Morse code argument 
@@ -79,6 +81,7 @@ int main(int argc, char *argv[]) {
                skips the first two characters because they are the character labels
             */
             if (strcmp(argv[argIndex], morse[i] + 2) == 0) {
+
                 // if it matches then print the character
                 printf("%c", morse[i][0]);
                 found = 1;
@@ -88,9 +91,11 @@ int main(int argc, char *argv[]) {
             }
         }
 
-        // if no match was found, print a 404 error for not found
+        // error handling: if no match was found, print a 404 error for not found
         if (!found) {
-            printf("ERROR 404");  // Error indicator for not found Morse code
+            
+            // my favorite error
+            printf("ERROR 404");  
         }
     }
 
